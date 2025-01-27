@@ -14,10 +14,10 @@ const userSchema = new mongoose.Schema({
         required:true,
         unique:true,
     },
-    password:{
-        type:String,
-        required:true
-    },
+    // password:{
+    //     type:String,
+    //     required:true
+    // },
     clerkId:{
         type: String,
         required: true,
@@ -25,4 +25,4 @@ const userSchema = new mongoose.Schema({
     },
 }, {timestamps: true})
 
-export const User = mongoose.Model("User", userSchema)
+export const User = mongoose.model("User", userSchema)
